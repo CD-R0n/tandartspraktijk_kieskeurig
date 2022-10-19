@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name='original-source' content='https://github.com/CD-R0n/tandartspraktijk_kieskeurig'>
+    <title>Afspraak</title>
+</head>
+<body>
+    <h1>Tandartsafspraak</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+        Quisque commodo malesuada orci, sit amet viverra nisl ullamcorper quis.<br>
+        Donec metus ligula, convallis ut nulla a, iaculis ornare augue.<br>
+        Etiam maximus turpis et sapien malesuada venenatis.<br> 
+        Sed hendrerit diam eget porttitor ornare.<br> 
+        Maecenas feugiat, nulla eget hendrerit ultrices, metus diam dignissim velit, vel tempus nisi ante eu dui.<br> 
+        Phasellus quis augue sem.<br> 
+        Praesent leo nisl, dapibus eu nisl id, eleifend vulputate tellus.<br> 
+        Curabitur lacinia quam lacus, at imperdiet enim fermentum at.<br> 
+        Nulla semper, purus eu tempus gravida, urna sapien cursus lacus, non dignissim augue augue et elit.<br> 
+        Sed vitae mollis velit.<br>
+    </p>
+    <img src="/images/300.webp" alt="placeholder" width="300" title="placeholder.com">
+    <img src="/images/300.webp" alt="placeholder" width="300" title="placeholder.com">
+    <img src="/images/300.webp" alt="placeholder" width="300" title="placeholder.com">
+    <form action="https://formspree.io/f/xzbwvygj" method="post">
+        <fieldset>
+            <legend>Persoonlijke gegevens</legend>
+            <table>
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td><label for="voornaam">Voornaam:</label></td>
+                        <td><input type="text" id="voornaam" name="voornaam" maxlength="100" placeholder="Voornaam" required></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="achternaam">Achternaam:</label></td>
+                        <td><input type="text" id="achternaam" name="achternaam" minlength="2" maxlength="100" placeholder="Achternaam" required></td>    
+                        <td></td>      
+                        <td></td>              
+                    </tr>
+                    <tr>
+                        <td>Aanhef:</td>
+                        <td>
+                            <input type="radio" id="anders" name="aanhef" value="anders" checked>
+                            <label for="anders">Anders</label>                         
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="radio" id="mijnheer" name="aanhef" value="mijnheer">
+                            <label for="mijnheer">Dhr.</label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="radio" id="mevrouw" name="aanhef" value="mevrouw">
+                            <label for="mevrouw">Mevr.</label>  
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="straat">Straat:</label></td>
+                        <td><input type="text" id="straat" name="straat" minlength="2" maxlength="100" placeholder="Straatnaam" required></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="huisnummer">Huisnummer:</label></td>
+                        <td>
+                            <input type="number" id="huisnummer" name="huisnummer" min="1" required max="9999">
+                            <label for="toevoeging">Toevoeging huisnummer:</label>
+                            <input type="text" id="toevoeging" name="toevoeging" maxlength="100" size="4">
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="postcode">Postcode:</label></td>
+                        <td><input type="text" id="postcode" name="postcode" minlength="6" maxlength="8" placeholder="1234AB" size="7" required></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="woonplaats">Woonplaats:</label></td>
+                        <td><input type="text" id="woonplaats" name="woonplaats" minlength="2" maxlength="100" placeholder="Woonplaats" required></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="telefoon">Telefoonnummer:</label></td>
+                        <td><input type="tel" id="telefoon" name="telefoon" required placeholder="0123456789" minlength="7" maxlength="12"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" required maxlength="100" placeholder="email@email.com"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Beschrijving van de klachten</legend>
+            <table>
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td>Waar heeft u last van:</td>
+                        <td>
+                            <input type="checkbox" id="kiespijn" name="klacht_type" value="kiespijn">
+                            <label for="kiespijn">Tanden/kiezen</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" id="tandvlees" name="klacht_type" value="tandvlees">
+                            <label for="tandvlees">Tandvlees</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="foto">Eventuele foto:</label></td>
+                        <td><input type="file" id="foto" name="foto" accept="image/*" capture="user"></td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Toelichting van de klachten</legend>
+            <label for="beschrijving">Geef een beschrijving van uw klachten:</label><br>
+            <textarea name="beschrijving" id="beschrijving" cols="110" rows="5" maxlength="1500" placeholder="Maximaal 1500 tekens"></textarea>
+            <br>
+            <label for="datum">Wanneer wilt u langskomen:</label><br>
+            <input type="date" id="datum" name="datum" min="2022-10-19">
+        </fieldset>
+        <br>
+        <input type="submit" value="Bevestig afspraak">
+    </form>
+</body>
+</html>
